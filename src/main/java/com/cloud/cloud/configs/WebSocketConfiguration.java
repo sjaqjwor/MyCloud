@@ -1,5 +1,7 @@
 package com.cloud.cloud.configs;
 
+import com.cloud.cloud.controllers.SessionHanshakeInterceptor;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.web.socket.config.annotation.AbstractWebSocketMessageBrokerConfigurer;
@@ -17,7 +19,11 @@ public class WebSocketConfiguration extends AbstractWebSocketMessageBrokerConfig
     }
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/users").setAllowedOrigins("*").withSockJS();
+        registry.addEndpoint("/users").setAllowedOrigins("*").withSockJS().setInterceptors(gt());
+    }
+    @Bean
+    public SessionHanshakeInterceptor gt(){
+        return new SessionHanshakeInterceptor();
     }
 }
 
