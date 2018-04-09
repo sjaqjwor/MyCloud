@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <package name="wooklee.koreaplaner.mappers.UserMapper"/>
+        <package name="wooklee.koreaplaner.mappers.FriendMapper"></package>
+        <package name="wooklee.koreaplaner.mappers.ScheduleMapper"/>
+        <package name="wooklee.koreaplaner.mappers.DetailScheduleMapper"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/FriendMapper.xml"/>
+        <mapper resource="mapper/ScheduleMapper.xml"/>
+        <mapper resource="mapper/DetailScheduleMapper.xml"/>
+    </mappers>
+</configuration>
