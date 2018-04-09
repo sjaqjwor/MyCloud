@@ -1,6 +1,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
+
 ### STS ###
 .apt_generated
 .classpath
@@ -9,6 +10,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
+*.properties
+*.xml
 
 ### IntelliJ IDEA ###
 .idea
