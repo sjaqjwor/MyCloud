@@ -6,7 +6,15 @@
 ## 소개하기
 **Springboot를 활용한 나만의 클라우드**
 
-## 준비하기
+## 사용된 기술
+```
+Springboot
+JWT(사용예정)
+S3(사용예정)
+```
+
+
+## Dependencies
 
 **Spring boot**
 ```
@@ -98,14 +106,6 @@
 ```
 mvn spring-boot:run
 ```
-
-## 사용된 기술
-```
-Springboot
-JWT(사용예정)
-S3(사용예정)
-```
-
 
 ## 저자
 ```
